@@ -1,0 +1,148 @@
+/* 
+    Fonts Universe
+*/
+@font-face {
+    font-family: 'UniverseBold';
+    src: url('../../fonts/ShopifySans--bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniverseItalic';
+    src: url('../../fonts/universnext_1.woff2') format('woff2'),
+         url('../../fonts/universnext_2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniverseItalicBold';
+    src: url('../../fonts/universnext_3.woff2') format('woff2'),
+         url('../../fonts/universnext_4.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'UniverseRegular';
+    src: url('../../fonts/universnext_5.woff2') format('woff2'),
+         url('../../fonts/universnext_6.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniverseRegular1';
+    src: url('../../fonts/universnext_7.woff2') format('woff2'),
+         url('../../fonts/universnext_8.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniverseRegular2';
+    src: url('../../fonts/ShopifySans--regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: 'UniverseRegular', Arial, sans-serif;
+    background-color: #EFEFEF;
+}
+
+.h6{
+    font-size: 12px;
+    line-height: 2.7;
+}
+.bg-dark{
+    background-color: #1c1c1c;
+}
+
+.nav-inside-container{
+    display: flex; width: 100%; align-items: center; justify-content: space-between;
+}
+#navbar {
+ 
+  }
+  .navbar-white{
+    background-color: #ffffffd6;;
+  }
+
+  .nav-item{
+    color: rgb(255, 255, 255);
+  }
+
+  .nav-item-dark{
+    color: rgb(0, 0, 0);
+  }
+
+  .navbar{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 72px;
+    justify-content: flex-start;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navbar a:hover {
+    /* background-color: #ddd; */
+    color: black;
+  }
+  #navbar a.active {
+    /* background-color: #bdc3c1; */
+    /* color: white; */
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+ #btns{
+    position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 250px;
+  z-index: 0;
+  left: 0;
+  bottom: 50%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  display: grid;
+  /* opacity: 0.4; */
+ }
+
+ .btn-prestige{
+  background-color: #EFEFEF;
+  padding: 20px 30px;
+  background: linear-gradient(to left, #EFEFEF 50%, rgba(173, 216, 230, 0) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+  border: 1px solid #EFEFEF ;
+ }
+
+ .btn-prestige:hover {
+    background-position: left;
+    transition: background-position 0.3s ease-out; /* Add transition only for background position */
+    color: #EFEFEF; /* Keep color change without transition */
+}
